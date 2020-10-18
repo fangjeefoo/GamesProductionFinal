@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Node
+  - Melee
+  - Range
+  - Rocket
+  - Coin
+  - SpeedUp
+  - Interest
+  - AlienDestroyer
+  - AlienFighter
+  - BioTorpedo
+  - PolygonalMetalon
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - LineRendererLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: LineRendererLayer
+    uniqueID: 682820723
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
