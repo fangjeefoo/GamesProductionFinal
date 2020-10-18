@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - DanielLochner.Assets.SimpleSideMenu.SimpleSideMenu
     - Enemy
     - GameManager
     - GameObjectDestroy
@@ -91,27 +90,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 11728}
+      Script: {instanceID: 11726}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11792}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11842}
     - Class: 114
-      Script: {instanceID: 12020}
+      Script: {instanceID: 12018}
     - Class: 114
-      Script: {instanceID: 12174}
+      Script: {instanceID: 12172}
     - Class: 114
-      Script: {instanceID: 12302}
+      Script: {instanceID: 12300}
     - Class: 114
-      Script: {instanceID: 12610}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13068}
     - Class: 114
-      Script: {instanceID: 13126}
-    - Class: 114
-      Script: {instanceID: 13146}
+      Script: {instanceID: 13124}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -172,11 +169,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11534}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11842}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13068}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -227,11 +224,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11842}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13068}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -280,13 +277,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11842}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13068}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -337,11 +334,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11842}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13068}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -571,7 +568,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 92a6e48c4c019a91496528ddec12e492
+      Hash: 4a34aa60dbdbe96e104cd57a462a8ae5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -894,5 +891,4 @@ ScriptsOnlyBuild:
   - Assets/_Scenes/HowToPlay.unity
   - Assets/_Scenes/Lose.unity
   - Assets/_Scenes/Win.unity
-  playerPath: C:/Users/asus/Google Drive (foofangjee@gmail.com)/MMU/Degree/Year 3/Semester
-    1/android.apk
+  playerPath: C:/Users/E/Desktop/TowerDefense.apk

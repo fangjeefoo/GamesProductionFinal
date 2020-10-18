@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     private List<string> pickUpSlot;  
     private string tower;
     private int currentMoneyValue;
-    private float specialSkillCD;
+    private bool useSkill;
     // Start is called before the first frame update
 
     void Start()
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
         isFinished = true;
         state = "playing";
         currentMoneyValue = moneyValue;
-        specialSkillCD = 0;
+        useSkill = false;
 
         enemyList = new List<GameObject>();
         towerList = new List<GameObject>();
@@ -99,14 +99,6 @@ public class GameManager : MonoBehaviour
     {
         if(currentWave != 30)
             timer -= Time.deltaTime;
-        if (specialSkillButton.interactable == false)
-            specialSkillCD += Time.deltaTime;
-
-        if(specialSkillCD >= 60f)
-        {
-            specialSkillCD = 0;
-            specialSkillButton.interactable = true;
-        }
 
         countdownText.text = "Countdown: " + Mathf.Round(timer).ToString();
         moneyText.text = "Money: " + money.ToString();
@@ -384,7 +376,10 @@ public class GameManager : MonoBehaviour
     {
         cogButton.interactable = enabled;
         shopButton.interactable = enabled;
-        specialSkillButton.interactable = enabled;
+        if (!enabled)
+            specialSkillButton.interactable = enabled;
+        else if(!useSkill)
+            specialSkillButton.interactable = enabled;
         skillButton[0].interactable = enabled;
         skillButton[1].interactable = enabled;
     }
@@ -737,6 +732,8 @@ public class GameManager : MonoBehaviour
                 money -= 500;
             }
             specialSkillButton.interactable = false;
+            useSkill = true;
+            StartCoroutine(SpecialSkillCountDown());
         }
         else
             StartCoroutine(DisplayText_SpecialSkill());
@@ -789,6 +786,13 @@ public class GameManager : MonoBehaviour
             temp.GetComponent<Enemy>().door = door;
             enemyList.Add(temp);
         }            
+    }
+
+    IEnumerator SpecialSkillCountDown()
+    {
+        yield return new WaitForSeconds(60f);
+        useSkill = false;
+        specialSkillButton.interactable = true;
     }
 
     IEnumerator NextWave()
